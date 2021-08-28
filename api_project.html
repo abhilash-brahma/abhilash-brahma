@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="api_project_css.css">
+	<title>API PROJECT</title>
+</head>
+<body>
+	<H1>WHAT DOES YOUR NAME SAYS ABOUT YOUR PERSONALITY</H1>
+	<form>
+		<table>
+			<thead><td><h2>ENTER YOUR NAME</h2></td></thead>
+			<tr><td><input type="text" name="name" id="set" required></td></tr>
+			<tr><td><img src="cartoon_welcome_api.png" id="imageid"></td></tr>
+			<tr><td><button>Click me</button></td></tr>
+		</table>
+	</form>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	
+<script type="text/javascript">
+		$(document).ready(function(){
+			$('button').click(function(){
+				const name = $("#set").val();
+				alert(name);
+			$("#imageid").attr("src","https://www.ft.com/__origami/service/image/v2/images/raw/https%3A%2F%2Fd1e00ek4ebabms.cloudfront.net%2Fproduction%2F6c3bdab3-e54a-4515-826a-c6894410b703.jpg?fit=scale-down&source=next&width=700");
+
+			});
+		});
+	</script>
+
+</body>
+</html>
